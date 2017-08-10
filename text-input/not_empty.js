@@ -1,6 +1,6 @@
 /**
  * @header
- * @name String is empty
+ * @name String is not empty
  * @description Check if a response is not empty
  * @category Text input
  */

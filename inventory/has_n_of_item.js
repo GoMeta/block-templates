@@ -38,7 +38,7 @@ const hasEnoughItemsTransition = '';
 const notHaveEnoughItemsTransition = '';
 
 if (Meta.item.numItems(item) >= number) {
-	Meta.callbacks.transitionTo(hasItemTransition);
+	Meta.callbacks.transitionTo(hasEnoughItemsTransition);
 } else {
-	Meta.callbacks.transitionTo(notHaveItemTransition);
+	Meta.callbacks.transitionTo(notHaveEnoughItemsTransition);
 }
