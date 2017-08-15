@@ -2,9 +2,10 @@
  * @header
  * @name Start Timer
  * @description Starts a timer with the specified name
- * @category Timing
+ * @image https://assets.cdn.gometa.io/block-icons/startTimer.png
+ * @category Time Controls
  */
- 
+
 /**
  * @inspectable
  * @name Timer Name
@@ -19,11 +20,11 @@ const timerName = `timer`;
  * @description Where this block transitions when it is finished
  * @type transition
  */
-const transition = `aaed50f5-b7a2-4348-9242-4724a9eaf7b1`;
+const transition = ``;
 
-await Meta.actions.setProp(Meta.data.user, `${timerName}:start`, Math.floor((new Date()).getTime() / 1000));
-await Meta.actions.setProp(Meta.data.user, `${timerName}:raw`, 0);
-await Meta.actions.setProp(Meta.data.user, timerName, 'Timer still running');
+Meta.$props[`${timerName}:start`] = Math.floor((new Date()).getTime() / 1000);
+Meta.$props[`${timerName}:raw`] = 0;
+Meta.$props[timerName] = 'Timer running';
 
 Meta.callbacks.transitionTo(transition);
 

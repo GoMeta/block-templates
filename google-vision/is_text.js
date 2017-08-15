@@ -1,8 +1,10 @@
 /**
  * @header
  * @name Is text
- * @description Check if a photo taken by the user contains a string of text
+ * @description Connect this block to a Camera Scene to check if a photo taken by the user contains a string of text.
+ * @image https://assets.cdn.gometa.io/block-icons/isText.png
  * @category Google vision
+ * @accepts URL
  */
 
 /**

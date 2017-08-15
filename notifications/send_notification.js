@@ -2,6 +2,7 @@
  * @header
  * @name Send notification
  * @description Send a notification to the user
+ * @image https://assets.cdn.gometa.io/block-icons/sendNotification.png
  * @category Notifications
  */
 

@@ -1,6 +1,6 @@
 /**
  * @header
- * @name Increment user property
+ * @name Decrement user property by value
  * @description Decrement a property on a user's account (e.g., coins, points, xp, etc.)
  * @category User properties
  */
@@ -29,6 +29,6 @@ const value = 1;
  */
 const transition = '';
 
-await Meta.actions.setProp(Meta.data.user, key, value, 'dec');
+Meta.$props[key] = (Meta.$props[key] || 0) - value;
 
 Meta.callbacks.transitionTo(transition);

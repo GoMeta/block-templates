@@ -2,9 +2,10 @@
  * @header
  * @name Check Timer
  * @description Transition based on how much time has passed since a start time block
+ * @image https://assets.cdn.gometa.io/block-icons/checkTimer.png
  * @category Time controls
  */
- 
+
 /**
  * @inspectable
  * @name Timer name
@@ -12,23 +13,18 @@
  * @type text
  */
 const timerName = ``;
- 
-/**
- * @inspectable
- * @name Comparason
- * @description The operation to compare the timer with
- * @type enum
- * @options Greater than,Less than,Equal to
- */
-const comparator = `Less than`;
 
 /**
  * @inspectable
- * @name Time value
- * @description The amount of time used to compare
- * @type number
+ * @name Comparator
+ * @description What expected value to test
+ * @type comparator
+ * @lhs Elapsed time
  */
-const time = 0;
+const comparator = {
+  operator: '>',
+  rhs: 1
+};
 
 /**
  * @inspectable
@@ -41,24 +37,24 @@ const timeUnit = `Seconds`;
 
 /**
  * @inspectable
- * @name Condition is true
+ * @name On success
  * @description Transition to take if the condition is true
  * @type transition
  */
-const trueTransition = ``;
+const successTransition = ``;
 
 /**
  * @inspectable
- * @name Condition is false
- * @description Transition to take if the condition is false 
+ * @name On failure
+ * @description Transition to take if the condition is false
  * @type transition
  */
-const falseTransition = ``;
+const failTransition = ``;
 
 let raw = 0;
-const isEnd = await Meta.helpers.getProp(`${timerName}:raw`);
+const isEnd = Meta.$props[`${timerName}:raw`];
 if(isEnd === 0) {
-  const start = await Meta.helpers.getProp(`${timerName}:start`);
+  const start = Meta.$props[`${timerName}:start`];
   raw = parseInt((new Date().getTime() / 1000) - start);
 } else {
   raw = isEnd;
@@ -80,27 +76,8 @@ switch(timeUnit) {
     break;
 }
 
-const compTime = time * rawUnit;
-
-if(comparator === `Less than`) {
-  if(raw < compTime) {
-    Meta.callbacks.transitionTo(trueTransition);
-  } else {
-    Meta.callbacks.transitionTo(falseTransition);
-  }
-} else if(comparator === `Greater than`) {
-  if(raw > compTime) {
-    Meta.callbacks.transitionTo(trueTransition);
-  } else {
-    Meta.callbacks.transitionTo(falseTransition);
-  }
-} else if(comparator === `Equal to`) {
-  if(Math.floor(raw / rawUnit) === Math.floor(raw / compTime)) {
-    Meta.callbacks.transitionTo(trueTransition);
-  } else {
-    Meta.callbacks.transitionTo(falseTransition);
-  }
+if (compare(raw, comparator.operator, comparator.rhs * rawUnit)) {
+  Meta.callbacks.transitionTo(successTransition);
 } else {
-  Meta.callbacks.transitionTo(falseTransition);
+  Meta.callbacks.transitionTo(failTransition);
 }
-

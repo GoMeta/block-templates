@@ -3,12 +3,13 @@
  * @name POST to API
  * @description Make a POST request to a third-party API.
  * @category Custom APIs
+ * @image https://assets.cdn.gometa.io/block-icons/postToAPI.png
  */
 
 /**
  * @inspectable
  * @name URL
- * @description The URL to make the POST request to
+ * @description The URL to make the POSt request to
  * @type url
  */
 const url = '';
@@ -16,11 +17,10 @@ const url = '';
 /**
  * @inspectable
  * @name Value
- * @description The string to post, in the form of `key=value`. User's response is available as `$response`
+ * @description The string to post, in the form of `key=value`.
  * @type url
  */
-let value = '';
-value = value.spilt('$response').join(Meta.data.metadata.responseData);
+const value = '';
 
 /**
  * @inspectable

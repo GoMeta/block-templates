@@ -1,10 +1,11 @@
 /**
  * @header
  * @name Has completed experience
- * @description Checks if a user has completed an experience
+ * @description Check if a user has completed an experience
+ * @image https://assets.cdn.gometa.io/block-icons/hasCompletedExperience.png
  * @category Experiences
  */
- 
+
 /**
  * @inspectable
  * @name Experience
@@ -17,16 +18,16 @@ const experience = ``;
 /**
  * @inspectable
  * @name Has completed
- * @description Scene to transition to if the user has completed the experience
+ * @description Where to transition to if the user has completed the experience
  * @type transition
  */
 const successTransition = ``;
 
- 
+
 /**
  * @inspectable
  * @name Has not completed
- * @description Scene to transition to if the user has not completed the experience
+ * @description Where to transition to if the user has not completed the experience
  * @type transition
  */
 const failTransition = ``;

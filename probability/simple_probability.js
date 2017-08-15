@@ -2,6 +2,7 @@
  * @header
  * @name Simple probability
  * @description Perform a simple probability check
+ * @image https://assets.cdn.gometa.io/block-icons/simpleProbability.png
  * @category Probability
  */
 

@@ -2,6 +2,7 @@
  * @header
  * @name Give item
  * @description Programatically give an item to the user
+ * @image https://assets.cdn.gometa.io/block-icons/giveItem.png
  * @category Inventory
  */
 

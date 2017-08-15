@@ -1,14 +1,16 @@
 /**
  * @header
  * @name Upload to Photo Wall
- * @description Upload a photo to a Metaverse photo wall.
+ * @description This block uploads a photo taken by the user to a Metaverse Photo Wall. You can create a photo wall at [http://photos.metaverseapp.io/](http://photos.metaverseapp.io/).
+ * @image https://assets.cdn.gometa.io/block-icons/uploadToPhotoWall.png
  * @category Camera
+ * @accepts URL
  */
 
 /**
  * @inspectable
  * @name Photo wall ID
- * @description The ID of your photo wall
+ * @description The ID of your Photo Wall.
  * @type uuid
  */
 const wall = '';
@@ -16,7 +18,7 @@ const wall = '';
 /**
  * @inspectable
  * @name Source
- * @description The source of this photo
+ * @description The same photo wall can be used in multiple experiences. Give this photo a tag to help you organize it later.
  * @type string
  */
 const source = '';

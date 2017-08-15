@@ -2,6 +2,7 @@
  * @header
  * @name Check time gate active
  * @description Check if a time gate is still active
+ * @image https://assets.cdn.gometa.io/block-icons/checkTimeGateActive.png
  * @category Time controls
  */
 

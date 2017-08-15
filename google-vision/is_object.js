@@ -1,8 +1,10 @@
 /**
  * @header
  * @name Is object
- * @description Check if a photo taken by the user contains a specified object
+ * @description Connect this block to a Camera Scene to check if a photo taken by the user contains a specified object.
+ * @image https://assets.cdn.gometa.io/block-icons/isObject.png
  * @category Google vision
+ * @accepts URL
  */
 
 /**

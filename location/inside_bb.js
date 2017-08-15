@@ -2,6 +2,7 @@
  * @header
  * @name Inside bounding box
  * @description Check if a user is inside of a geographical bounding box
+ * @image https://assets.cdn.gometa.io/block-icons/insideBoundingBox.png
  * @category Location
  */
 

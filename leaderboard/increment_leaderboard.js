@@ -2,6 +2,7 @@
  * @header
  * @name Increment leaderboard
  * @description Increment a user's record on a Metaverse leaderboard.
+ * @image https://assets.cdn.gometa.io/block-icons/incrementLeaderboard.png
  * @category Leaderboard
  */
 

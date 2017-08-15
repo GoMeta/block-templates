@@ -2,6 +2,7 @@
  * @header
  * @name User property exists
  * @description Check if a user property exists
+ * @image https://assets.cdn.gometa.io/block-icons/userPropertyExists.png
  * @category User properties
  */
 

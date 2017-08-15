@@ -1,8 +1,10 @@
 /**
  * @header
  * @name Is person
- * @description Check if a photo taken by the user contains a person
+ * @description Connect this block to a Camera Scene to check if a photo taken by the user contains a person.
+ * @image https://assets.cdn.gometa.io/block-icons/isPerson.png
  * @category Google vision
+ * @accepts URL
  */
 
 /**

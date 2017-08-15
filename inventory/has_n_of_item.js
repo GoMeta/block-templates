@@ -2,6 +2,7 @@
  * @header
  * @name Has number of items
  * @description Check if a user has at least a certain number of an item in their inventory
+ * @image https://assets.cdn.gometa.io/block-icons/hasNumberOfItems.png
  * @category Inventory
  */
 

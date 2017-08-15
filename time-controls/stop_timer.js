@@ -2,7 +2,8 @@
  * @header
  * @name Stop Timer
  * @description Stops a timer with the specified name
- * @category Timing
+ * @image https://assets.cdn.gometa.io/block-icons/stopTimer.png
+ * @category Time Controls
  */
 
 /**
@@ -38,11 +39,10 @@ function diffTime(diff) {
   return `${out}${diff} seconds`;
 }
 
-const start = await Meta.helpers.getProp(`${timerName}:start`);
-const raw = parseInt((new Date().getTime() / 1000) - start);
+const raw = parseInt((new Date().getTime() / 1000) - Meta.$props[`${timerName}:start`]);
 
-await Meta.actions.setProp(Meta.data.user, `${timerName}:raw`, raw);
-await Meta.actions.setProp(Meta.data.user, timerName, diffTime(raw));
+Meta.$props[`${timerName}:raw`] = raw;
+Meta.$props[timerName] = diffTime(raw);
 
 Meta.callbacks.transitionTo(transition);
 

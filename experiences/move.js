@@ -2,6 +2,7 @@
  * @header
  * @name Move experience
  * @description Move an experience to a new position
+ * @image https://assets.cdn.gometa.io/block-icons/moveExperience.png
  * @category Experiences
  */
 
@@ -30,8 +31,7 @@ position = position.split(',').map(coord => parseFloat(coord.trim()));
  */
 const transition = '';
 
-if (position.length === 2 &&
-	position[0] && position[1]) {
+if (position.length === 2 && position[0] && position[1]) {
 	await Meta.storyboard.move(experience, position[0], position[1]);
 }
 

@@ -1,7 +1,8 @@
 /**
  * @header
- * @name Message experience
+ * @name Message to current user
  * @description Send an experience to a user as a message
+ * @image https://assets.cdn.gometa.io/block-icons/messageExperience.png
  * @category Experiences
  */
 

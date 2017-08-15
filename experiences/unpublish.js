@@ -2,6 +2,7 @@
  * @header
  * @name Unpublish experience
  * @description Unpublish an experience
+ * @image https://assets.cdn.gometa.io/block-icons/unpublishExperience.png
  * @category Experiences
  */
 

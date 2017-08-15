@@ -2,6 +2,7 @@
  * @header
  * @name Clear time gate
  * @description Set a time gate that expires in a certain number of seconds
+ * @image https://assets.cdn.gometa.io/block-icons/clearTimeGate.png
  * @category Time controls
  */
 

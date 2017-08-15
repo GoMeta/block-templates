@@ -1,8 +1,10 @@
 /**
  * @header
  * @name Is sad
- * @description Check if the most prominent face in a photo is of a person who is sad
+ * @description Connect this block to a Camera Scene to check if the most prominent face in a photo is of a person who is sad.
+ * @image https://assets.cdn.gometa.io/block-icons/isSad.png
  * @category Google vision
+ * @accepts URL
  */
 
 /**

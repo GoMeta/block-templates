@@ -1,8 +1,10 @@
 /**
  * @header
  * @name Is animal
- * @description Check if a photo taken by the user contains a specified animal
+ * @description Connect this block to a Camera Scene to check if a photo taken by the user contains a specified animal.
+ * @image https://assets.cdn.gometa.io/block-icons/isAnimal.png
  * @category Google vision
+ * @accepts URL
  */
 
 /**

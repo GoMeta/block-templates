@@ -2,6 +2,7 @@
  * @header
  * @name Set user property
  * @description Save a property to the user's account
+ * @image https://assets.cdn.gometa.io/block-icons/setUserProperty.png
  * @category User properties
  */
 
@@ -29,6 +30,6 @@ const value = '';
  */
 const transition = '';
 
-await Meta.actions.setProp(Meta.data.user, key, value);
+Meta.$props[key] = value;
 
 Meta.callbacks.transitionTo(transition);

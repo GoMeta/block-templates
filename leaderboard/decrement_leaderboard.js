@@ -2,6 +2,7 @@
  * @header
  * @name Decrement leaderboard
  * @description Decrement a user's record on a Metaverse leaderboard.
+ * @image https://assets.cdn.gometa.io/block-icons/decrementLeaderboard.png
  * @category Leaderboard
  */
 

@@ -1,8 +1,10 @@
 /**
  * @header
  * @name Contains adult content
- * @description Check if the image contains adult content
+ * @description Connect this block to a Camera Scene to check if the image contains adult content.
+ * @image https://assets.cdn.gometa.io/block-icons/containsAdultContent.png
  * @category Google vision
+ * @accepts URL
  */
 
 /**

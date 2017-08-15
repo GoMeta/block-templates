@@ -2,6 +2,7 @@
  * @header
  * @name Publish experience
  * @description Publish an experience
+ * @image https://assets.cdn.gometa.io/block-icons/publishExperience.png
  * @category Experiences
  */
 
