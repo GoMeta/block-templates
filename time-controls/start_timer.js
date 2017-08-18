@@ -22,9 +22,9 @@ const timerName = `timer`;
  */
 const transition = ``;
 
-Meta.$props[`${timerName}:start`] = Math.floor((new Date()).getTime() / 1000);
-Meta.$props[`${timerName}:raw`] = 0;
-Meta.$props[timerName] = 'Timer running';
+Meta.$user[`${timerName}:start`] = Math.floor((new Date()).getTime() / 1000);
+Meta.$user[`${timerName}:raw`] = 0;
+Meta.$user[timerName] = 'Timer running';
 
 Meta.callbacks.transitionTo(transition);
 

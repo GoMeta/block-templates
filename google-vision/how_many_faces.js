@@ -13,10 +13,7 @@
  * @description How many faces to look for
  * @type comparator
  */
-const comparator = {
-  operator: '>',
-  rhs: 1
-};
+const comparator = {"operator":"=","rhs": 1};
 
 /**
  * @inspectable

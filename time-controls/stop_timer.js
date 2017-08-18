@@ -39,10 +39,10 @@ function diffTime(diff) {
   return `${out}${diff} seconds`;
 }
 
-const raw = parseInt((new Date().getTime() / 1000) - Meta.$props[`${timerName}:start`]);
+const raw = parseInt((new Date().getTime() / 1000) - Meta.$user[`${timerName}:start`]);
 
-Meta.$props[`${timerName}:raw`] = raw;
-Meta.$props[timerName] = diffTime(raw);
+Meta.$user[`${timerName}:raw`] = raw;
+Meta.$user[timerName] = diffTime(raw);
 
 Meta.callbacks.transitionTo(transition);
 

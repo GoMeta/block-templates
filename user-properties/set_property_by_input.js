@@ -21,6 +21,6 @@ const key = '';
  */
 const transition = '';
 
-Meta.$props[key] = Meta.$input;
+Meta.$user[key] = Meta.$input;
 
 Meta.callbacks.transitionTo(transition);

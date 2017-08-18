@@ -21,10 +21,7 @@ const dice = '';
  * @description What expected value to test
  * @type comparator
  */
-const comparator = {
-  operator: '>',
-  rhs: 1
-};
+const comparator = {"operator":"=","rhs": 1};
 
 /**
  * @inspectable

@@ -12,10 +12,7 @@
  * @type comparator
  * @lhs String length
  */
-const comparator = {
-  operator: '>',
-  rhs: 1
-};
+const comparator = {"operator":"=","rhs": 1};
 
 /**
  * @inspectable

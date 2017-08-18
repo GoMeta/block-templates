@@ -21,10 +21,7 @@ const timerName = ``;
  * @type comparator
  * @lhs Elapsed time
  */
-const comparator = {
-  operator: '>',
-  rhs: 1
-};
+const comparator = {"operator":"=","rhs": 1};
 
 /**
  * @inspectable

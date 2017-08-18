@@ -21,10 +21,7 @@ const key = '';
  * @type comparator
  * @lhs Property
  */
-const comparator = {
-  operator: '>',
-  rhs: 1
-};
+const comparator = {"operator":"=","rhs": 1};
 
 /**
  * @inspectable

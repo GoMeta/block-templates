@@ -29,6 +29,6 @@ const value = 1;
  */
 const transition = '';
 
-Meta.$props[key] = (Meta.$props[key] || 0) + value;
+Meta.$user[key] = (Meta.$user[key] || 0) + value;
 
 Meta.callbacks.transitionTo(transition);

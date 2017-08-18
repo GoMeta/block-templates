@@ -21,10 +21,7 @@ const key = '';
  * @type comparator
  * @lhs Property
  */
-const comparator = {
-  operator: '>',
-  rhs: 1
-};
+const comparator = {"operator":"=","rhs": 1};
 
 /**
  * @inspectable
@@ -42,7 +39,7 @@ const successTransition = '';
  */
 const failTransition = '';
 
-if (compare(Meta.$props[key], comparator.operator, comparator.rhs)) {
+if (compare(Meta.$user[key], comparator.operator, comparator.rhs)) {
   Meta.callbacks.transitionTo(successTransition);
 } else {
   Meta.callbacks.transitionTo(failTransition);

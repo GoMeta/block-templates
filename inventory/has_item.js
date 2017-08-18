@@ -16,7 +16,7 @@ const item = '';
 
 /**
  * @inspectable
- * @name Has item
+ * @name On has item
  * @description Where this block transitions if the user has the item
  * @type transition
  */

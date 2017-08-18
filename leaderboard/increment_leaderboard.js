@@ -39,7 +39,7 @@ Meta.actions.post('http://leaderboards.metaverseapp.io/api/update.php', {
 		Accept: 'application/x-www-form-urlencoded',
 		'Content-Type': 'application/x-www-form-urlencoded',
 	},
-	body: `apikey=${leaderboard}&username=${data.name}&increment=${increment}`,
+	body: `apikey=${leaderboard}&username=${user.name}&increment=${increment}`,
 });
 
 Meta.callbacks.transitionTo(transition);

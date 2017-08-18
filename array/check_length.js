@@ -13,10 +13,7 @@
  * @lhs Array length
  * @type comparator
  */
-const comparator = {
-  operator: '>',
-  rhs: 1
-};
+const comparator = {"operator":"=","rhs": 1};
 
 /**
  * @inspectable

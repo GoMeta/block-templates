@@ -3,7 +3,7 @@
  * @name Generate random number
  * @description Generate a random number
  * @category Number
- * @returns T
+ * @returns Number
  */
 
 /**
